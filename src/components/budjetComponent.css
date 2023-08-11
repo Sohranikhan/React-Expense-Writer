@@ -1,0 +1,88 @@
+.main{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.expense{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+ h1{
+font-size: 37px;
+font-weight: 700;
+margin: 1rem;
+}
+.budjetDiv{
+    height: 60px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.budjetEditBtn{
+    cursor: pointer;
+    padding: 5px;
+    background: rgb(0, 119, 255);
+    color: white;
+    margin: 0 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+padding: 10px;
+}
+.budjetDiv span{
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+.budjetDiv:nth-child(2){
+    background: rgba(142, 142, 142, 0.186) ;
+    color: rgb(44, 44, 44);
+}
+.budjetDiv:nth-child(3){
+    background: rgba(0, 149, 255, 0.211);
+    color: rgba(0, 113, 242, 0.952);
+}
+.budjetDiv:nth-child(1){
+    color: rgba(0, 160, 45, 0.96);
+
+    background: rgba(0, 175, 41, 0.153);
+}
+.budjetInput{
+    margin: 0 0 0 8px;
+    width: 60px;
+    height: 100%;
+    font-size: large;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 640px) {
+    .expense{
+        justify-content: flex-start;
+    }
+    .budjetDiv{
+        justify-content: flex-start;
+        width: 100%;
+        margin: 8px 0;
+    }
+}
